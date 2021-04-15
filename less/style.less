@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+ }
+ 
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+// Core
+.container {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    padding: 8px 30px;
+
+    border: 1px solid #000;
+    border-radius: 48px;
+
+    transition: all .2s linear;
+
+    &:hover {
+        color: @gold;
+        // background-color: @black;
+        border-color: @gold;
+    }
+}
+
+.section__title {
+    margin-bottom: 22px;
+
+    font-size: 36px;
+    color: @black;
+    font-weight: 400;
+    line-height: 1.2;
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
+}
+
+.section__text {
+    font-size: 18px;
+    line-height: 1.4;
+    color: @black;
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+// Vars
+@import "vars.less";
+
+// Block
+@import "block/header.less";
+@import "block/menu.less";
+@import "block/app.less";
+@import "block/warranty.less";
+@import "block/care.less";
+@import "block/cashback.less";
+@import "block/partners.less";
+@import "block/shopping.less";
+@import "block/online.less";
+@import "block/account.less";
+@import "block/easy.less";
+@import "block/footer.less";

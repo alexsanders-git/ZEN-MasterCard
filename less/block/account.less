@@ -1,0 +1,56 @@
+.account {
+    padding: 55px 0 75px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.account__content {
+    max-width: 475px;
+
+    margin-top: 175px;
+}
+
+.account__title {
+    max-width: 374px;
+}
+
+.account__img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+// Media
+
+@media (max-width: 1100px) {
+    .account {
+        padding-bottom: 45px;
+
+        flex-direction: column-reverse;
+    }
+
+    .account__content {
+        margin-top: 50px;
+        // padding-top: 50px;
+    }
+
+    .account__pic {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .account__img {
+        max-width: 65%;
+        padding-bottom: 50px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .account__content {
+        margin-top: 25px;
+    }
+}

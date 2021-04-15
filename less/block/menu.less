@@ -1,0 +1,40 @@
+.menu {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.menu__link {
+    color: @black;
+    text-decoration: none;
+
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        background-color: @gold;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        z-index: 1;
+        transition: width .2s linear;
+    }
+
+    &:hover:not(.btn) {
+        color: @gold;
+
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+// Media
+
+@media (max-width: 950px) {
+    .menu {
+        display: none;
+    }
+}
